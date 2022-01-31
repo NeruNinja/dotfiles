@@ -9,7 +9,7 @@
     nixosConfigurations = {
       shuriken = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [ ./configuration.nix ];
+        modules = [ ./hosts/shuriken/configuration.nix ];
       };
     };
   };
