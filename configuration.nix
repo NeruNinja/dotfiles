@@ -5,6 +5,11 @@
     ./hardware-configuration.nix
   ];
 
+  nix = {
+    package = pkgs.nixUnstable;
+    extraOptions = "experimental-features = nix-command flakes";
+  };
+
   time.timeZone = "UTC";
   system.stateVersion = "21.11";
 
