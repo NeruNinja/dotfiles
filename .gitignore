@@ -1,0 +1,7 @@
+# Do not track any files in the /secrets/ directory unless they are encrypted.
+# All files that are tracked by git will be copied to the (world-readable) Nix
+# store when the flake is evaluated.
+/secrets/**/*
+!/secrets/**/
+!/secrets/**/*.asc
+!/secrets/**/*.nix
