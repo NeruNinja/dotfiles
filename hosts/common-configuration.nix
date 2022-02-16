@@ -6,7 +6,10 @@ let
   rootHashedPasswordFile = "${passwordFileDirectory}/root";
 in
 {
-  imports = [ ../secrets ];
+  imports = [
+    ../modules
+    ../secrets
+  ];
 
   users.mutableUsers = false;
 

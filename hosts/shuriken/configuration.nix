@@ -21,4 +21,10 @@
   networking.hostId = "948e3734";
   networking.useDHCP = false;
   networking.interfaces.ens3.useDHCP = true;
+
+  modules = {
+    desktop = {
+      xmonad.enable = true;
+    };
+  };
 }
