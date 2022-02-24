@@ -26,5 +26,9 @@
     desktop = {
       xmonad.enable = true;
     };
+
+    dev = {
+      haskell.enable = true;
+    };
   };
 }
