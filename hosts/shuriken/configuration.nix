@@ -30,5 +30,9 @@
     dev = {
       haskell.enable = true;
     };
+
+    ide = {
+      vscode.enable = true;
+    };
   };
 }

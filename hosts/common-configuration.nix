@@ -11,6 +11,12 @@ in
     ../secrets
   ];
 
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+    };
+  };
+
   users.mutableUsers = false;
 
   users.users.neru = {
