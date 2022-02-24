@@ -1,0 +1,20 @@
+cabal-version: 2.4
+name:          dot
+version:       0.1.0
+author:        Neru Ninja
+maintainer:    mail@neru.ninja
+
+library
+  exposed-modules:  Dot
+  hs-source-dirs:   src
+  build-depends:    base
+  default-language: Haskell2010
+
+executable dot
+  main-is:          Main.hs
+  hs-source-dirs:   app
+  build-depends:
+    , base
+    , dot
+
+  default-language: Haskell2010

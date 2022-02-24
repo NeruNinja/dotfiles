@@ -5,3 +5,7 @@
 !/secrets/**/
 !/secrets/**/*.asc
 !/secrets/**/*.nix
+
+# Do not track the directories storing the Cabal build artifacts for all of the
+# Haskell subprojects (E.g. dot, xmonad) in this repository.
+dist-newstyle/
