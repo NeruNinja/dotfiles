@@ -5,9 +5,15 @@ author:        Neru Ninja
 maintainer:    mail@neru.ninja
 
 library
-  exposed-modules:  Dot
+  exposed-modules:
+    Dot
+    Dot.Options
+
   hs-source-dirs:   src
-  build-depends:    base
+  build-depends:
+    , base
+    , optparse-applicative
+
   default-language: Haskell2010
 
 executable dot

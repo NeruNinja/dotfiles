@@ -1,4 +1,10 @@
-module Dot (dot) where
+module Dot
+  ( dot,
+  )
+where
+
+import Dot.Options
+import Options.Applicative
 
 dot :: IO ()
-dot = putStrLn "@NeruNinja's dotfiles management tool"
+dot = execParser dotOptions >>= print
