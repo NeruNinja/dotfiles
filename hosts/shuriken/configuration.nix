@@ -24,6 +24,7 @@
 
   modules = {
     desktop = {
+      obsidian.enable = true;
       xmonad.enable = true;
     };
 
