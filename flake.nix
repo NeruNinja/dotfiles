@@ -12,5 +12,10 @@
         modules = [ ./hosts/shuriken/configuration.nix ];
       };
     };
+
+    # This flake output allows for ad-hoc syncing of dotfiles for quickly
+    # testing out new user configuration without requiring a rebuild of the
+    # NixOS system: `nix eval --json .#dotfiles | dot link`
+    dotfiles = self.nixosConfigurations.shuriken.config.dot.files;
   };
 }
