@@ -4,7 +4,7 @@ with lib;
 let
   file = with types; submodule {
     options = {
-      symlink = mkOption {
+      link = mkOption {
         type = path;
         description = ''
           A path indicating where the symbolic link should be created inside

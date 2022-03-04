@@ -1,3 +1,5 @@
+{-# LANGUAGE ImportQualifiedPost #-}
+
 module Dot.Options
   ( Command (..),
     JsonSpecInput (..),
@@ -5,10 +7,11 @@ module Dot.Options
   )
 where
 
+import Data.ByteString.Lazy qualified as BS
 import Options.Applicative
 
 data JsonSpecInput
-  = CommandLineArgument String
+  = CommandLineArgument BS.ByteString
   | ReadStandardInput
   deriving (Show)
 
