@@ -35,5 +35,9 @@
     ide = {
       vscode.enable = true;
     };
+
+    shell = {
+      git.enable = true;
+    };
   };
 }

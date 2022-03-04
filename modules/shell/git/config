@@ -1,0 +1,13 @@
+[user]
+    name = Neru Ninja
+    email = mail@neru.ninja
+
+[core]
+    editor = vim
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[pull]
+    ff = only
